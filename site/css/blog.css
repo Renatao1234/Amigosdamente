@@ -1,0 +1,21 @@
+/* stylelint-disable selector-list-comma-newline-after */
+
+/*
+ * Blog posts
+ */
+.blog-post {
+  margin-bottom: 1rem;
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #999;
+}
+
+.blog-post-footer {
+  margin-bottom: 1px;
+  color: #999;
+}
