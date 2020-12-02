@@ -1,7 +1,7 @@
 <?php
-session_start();
 include("conexao.php");
 
+for($i = 0, $i = 10,){
 
 $query = "SELECT id_fale_conosco, questao FROM fale_conosco where tipo = 'elogio'";
 // executa a query
@@ -12,11 +12,14 @@ $row = mysqli_fetch_assoc($result);
 $_SESSION['total_elogio'] = mysqli_num_rows($result);
 
 if($row == 1) {
+	$i++;
 	$fale_conosco_bd = mysqli_fetch_assoc($result);
 	$_SESSION['id_elogio'] = $fale_conosco_bd['id_fale_conosco'];
 	$_SESSION['questao_elogio'] = $fale_conosco_bd['questao'];
 	header('Location: elogio.php');
 	exit();
+}
+
 }
 
 
